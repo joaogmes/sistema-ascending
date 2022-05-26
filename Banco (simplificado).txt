@@ -1,0 +1,68 @@
+[PLANO]
+	id
+	nome
+	valor
+	descricao
+	
+[SETOR]
+	id
+	nome
+	descricao
+	
+[USUARIO]
+	id
+	nome
+	cpf
+	whatsapp
+	email
+	login
+	senha
+	setor
+	status (
+
+[CLIENTE]
+	id
+	cnpj
+	cpf
+	nome
+	razaosocial
+	endereco
+	telefone
+	email
+	data
+	
+[PROPOSTA]
+	id
+	data
+	cliente FK ID CLIENTE
+	valor
+	descricao
+	status
+	plano FK ID PLANO
+	
+[PROJETO]
+	id
+	proposta FK ID PROPOSTA
+	observacao
+	data
+	contrato
+	
+[FINANCEIRO]
+	id
+	data
+	tipo
+	valor
+	projeto
+	ocorrencia
+	vencimento
+	pagamento
+	datacobranca
+	linkcobranca
+	
+[OCORRENCIA]
+	id
+	data
+	objeto (projeto ou financeiro)
+	chave (id)
+	descricao
+	responsavel

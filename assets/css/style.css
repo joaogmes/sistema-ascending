@@ -1,0 +1,191 @@
+:root{
+	--laranja:#E9560D;
+	--rosa:#E4006A;
+	--azul:#080C20;
+	--preto:#333333;
+	--branco:#FFFFFF;
+	--cinza: #4c4c4c;
+}
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	color:var(--branco);
+}
+
+body{
+	background: linear-gradient(240deg, var(--laranja), var(--rosa));
+	display: flex;
+	padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	color: var(--branco);
+	display: block;
+	transition: 0.3s ease-in-out;
+}
+
+hr{
+	border: dotted 1px var(--rosa);
+    width: 70%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content{
+	width: 80%;
+	max-width:1200px;
+	margin: auto;
+	border-radius: 15px;
+	background: var(--preto);
+	box-shadow: 11px 1px 15px #00000026;
+	padding:2rem;
+}
+
+.content .logo{
+	display: flex;
+	margin: auto;
+	width: 20vw;
+	min-width: 150px;
+	max-width: 300px;
+}
+
+.center{
+	text-align: center !important;
+}
+
+form{
+	max-width: 600px;
+	margin: auto;
+}
+
+label{
+	display: block;
+	margin: auto;
+	font-weight: bold;
+	text-align: center;
+}
+
+input{
+	width: 100%;
+	min-width: 100px;
+	padding: 10px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 2.2rem;
+	color: var(--preto);
+	text-align: center;
+	border: none;
+	box-shadow: 11px 1px 15px #00000026;
+	border-radius: 5px;
+	outline: none;
+}
+
+button{
+	display: block;
+	margin: auto;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	line-height: 2rem;
+	color: var(--branco);
+	font-weight: bold;
+	background: var(--preto);
+	min-width: 100px;
+	padding: 0.7rem;
+	border-radius: 5px;
+	outline:none;
+	border:solid 1px var(--branco);
+	transition: 0.2s ease-in-out;
+
+}
+
+button:hover{
+	cursor:pointer;
+	transform: scale(1.1);
+	transition: 0.2s ease-in-out;
+}
+
+
+a{
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+a h3:hover{
+	color:var(--laranja) !important;
+	transform: scale(1.02);
+}
+
+small{
+	font-weight: lighter;
+}
+
+.centro{
+	display: flex;
+}
+
+table {
+	display: block;
+	margin: auto;
+	overflow-x: auto;
+	white-space: nowrap;
+	border-collapse: collapse;
+}
+
+table th, table td{
+	padding: 1rem;
+}
+
+table tr{
+	border:dashed 1px var(--cinza);
+}
+
+.pesquisa input{
+	display: inline-block;
+	min-width: 240px;
+	width: 69%;
+}
+
+.pesquisa button{
+	display: inline-block;
+	min-width: 100px;
+	width: 30%;
+}
+
+.btn-small{
+	margin: auto;
+    padding: 0;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+button.laranja{
+	background: var(--laranja);
+	border-color: var(--laranja);
+	box-shadow: 11px 1px 15px #00000026;
+}
+
+button.rosa{
+	background: var(--rosa);
+	border-color: var(--rosa);
+	box-shadow: 11px 1px 15px #00000026;
+}
+
+.inline{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.inline input, .inline form{
+	width: auto;
+	margin: 0;
+}
+
+.inline button{
+	display: inline-block;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
